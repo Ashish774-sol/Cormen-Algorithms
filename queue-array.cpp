@@ -59,11 +59,11 @@ public:
 
 int main(){
 	Queue<int> q1(5);\
-	for(int i{1}; i <= 6; i++)
+	for(int i{1}; i <= 6; i++){
 		q1.enqueue(i);
-	std::cout << q1;
-	for(int i{1}; i <=6; i++)
+		q1.enqueue(i+1);
 		q1.dequeue();
+	}
 	std::cout << q1;
 	return 0;
 }
